@@ -135,15 +135,6 @@ $ docker-compose down
 ```
 
 
-
-
-
-
-
-
-
-
-
 # Aula 6 - Rancher - Single Node
 
 ### Instalar Rancher - Single Node
@@ -187,7 +178,10 @@ Adicionar o host B e host C.
 
 Pegar o seu comando no seu rancher.
 ```sh
-$ docker run -d --privileged --restart=unless-stopped --net=host -v /etc/kubernetes:/etc/kubernetes -v /var/run:/var/run rancher/rancher-agent:v2.4.3 --server https://rancher.my_rancher.com --token 5vn7xrrm4bzzz6txhlmshmbgcw2txsvxg5vg5cv5jvvplv4tn5jzmz --ca-checksum a49490b28a96f2625c186cdbae7ed23d93045b9c9e98089d83b5fe83bc889b99 --node-name k8s-1 --etcd --controlplane --worker```
+	
+$ sudo docker run -d --privileged --restart=unless-stopped --net=host -v /etc/kubernetes:/etc/kubernetes -v /var/run:/var/run rancher/rancher-agent:v2.4.3 --server http://rancher.my_rancher.com --token hwbxv58gzj8vhcxjx8xs2wscv96tp82rhjt84pp899d957ths8r7rp --ca-checksum a49490b28a96f2625c186cdbae7ed23d93045b9c9e98089d83b5fe83bc889b99 --node-name k81 --etcd --controlplane --worker
+
+	
 Será um cluster com 3 nós.
 Navegar pelo Rancher e ver os painéis e funcionalidades.
 
