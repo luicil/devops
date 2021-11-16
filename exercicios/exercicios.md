@@ -180,7 +180,7 @@ Pegar o seu comando no seu rancher.
 ```sh
 	
 $ sudo 
-sudo docker run -d --privileged --restart=unless-stopped --net=host -v /etc/kubernetes:/etc/kubernetes -v /var/run:/var/run rancher/rancher-agent:v2.4.3 --server https://rancher.my_rancher.com --token r7lq2vhwmq8m6p9fls8fd4xqlccvvgjhtlxngs8q9bc6d7wp484bqj --ca-checksum 9046f5285fd85ac585c6fb50d91d81ae77e220ac13210b74285cc4c11e9c82d1 --node-name k8s-1 --etcd --controlplane --worker
+sudo sudo docker run -d --privileged --restart=unless-stopped --net=host -v /etc/kubernetes:/etc/kubernetes -v /var/run:/var/run rancher/rancher-agent:v2.4.3 --server https://rancher.my_rancher.com --token n4gb46gbl6xfk6xzp5rmlkjj5l2ppnt56rhbs2c45rw5zn6dqlttr7 --ca-checksum 9046f5285fd85ac585c6fb50d91d81ae77e220ac13210b74285cc4c11e9c82d1 --node-name k8s-1 --address 192.168.11.1 --etcd --controlplane --worker
 	
 Será um cluster com 3 nós.
 Navegar pelo Rancher e ver os painéis e funcionalidades.
