@@ -179,7 +179,7 @@ Adicionar o host B e host C.
 Pegar o seu comando no seu rancher.
 ```sh
 	
-$ sudo docker run -d --privileged --restart=unless-stopped --net=host -v /etc/kubernetes:/etc/kubernetes -v /var/run:/var/run rancher/rancher-agent:v2.4.3 --server https://rancher.my-rancher.com --token cmhv2rnt7mn9fwzj5z77hbblz2xxfdmlj2kt7jnkxvtc9zs8mzfpz5 --ca-checksum e48d37329f49eae6f78bcba42084fc67b9ea74ec59eee2753adab93b1ac76475 --node-name k8s-1 --address 192.168.11.1 --etcd --controlplane --worker
+$ sudo docker run -d --privileged --restart=unless-stopped --net=host -v /etc/kubernetes:/etc/kubernetes -v /var/run:/var/run rancher/rancher-agent:v2.4.3 --server https://192.11.11.10 --token cg6p2n5vfxq8xqzml49hkwms8h9vr5k7f79hl8c5pjwfqkqlzgngj9 --ca-checksum 129c1efd88c55e9e186fd00396802741280b7ef4c6994c6682b88c2aa945e767 --node-name k8s-1 --address 192.168.11.1 --etcd --controlplane --worker
 	
 	
 Será um cluster com 3 nós.
